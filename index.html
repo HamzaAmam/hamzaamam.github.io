@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hamza Amam, mechanical engineering student at the University of South Carolina. Explore work in progress in CAD, Python automation, and 3D design.">
+    <meta name="theme-color" content="#0B1020">
     <title>Hamza Amam | Mechanical Engineering Student</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
-        <nav>
-            <h1>Hamza Amam</h1>
-
+        <nav class="container" aria-label="Main navigation">
+            <a class="brand" href="#home">Hamza Amam</a>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -26,100 +25,76 @@
         </nav>
     </header>
 
-    <section class="hero">
+    <main id="main" tabindex="-1">
+        <section id="home" class="hero container" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <p class="hero-tag">Mechanical Engineering Student</p>
+                <h1 id="hero-heading">I build software, CAD designs, and interactive experiences.</h1>
+                <p class="hero-description">Exploring Python, SOLIDWORKS, Blender, and robotics through engineering and design projects.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button">View Projects</a>
+                    <a href="#contact" class="button secondary">Contact Me</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="hero-content">
+        <section id="about" class="section container" aria-labelledby="about-heading">
+            <p class="eyebrow">About</p>
+            <h2 id="about-heading">About Me</h2>
+            <p class="section-description">I'm a Mechanical Engineering student at the University of South Carolina. I'm passionate about engineering design, Python programming, CAD modeling, Blender, and building things that solve real problems.</p>
+        </section>
 
-        <p class="hero-tag">
-            Mechanical Engineering Student
-        </p>
+        <section id="projects" class="section container" aria-labelledby="projects-heading">
+            <p class="eyebrow">Engineering &amp; design</p>
+            <h2 id="projects-heading">Projects</h2>
+            <p class="section-description">Work in progress. These repositories are starting points; project files and completed case studies have not been published yet.</p>
+            <div class="project-grid">
+                <a class="card" href="https://github.com/HamzaAmam/solidworks-projects" aria-labelledby="gearbox-title gearbox-link" aria-describedby="gearbox-status gearbox-description">
+                    <span class="project-status" id="gearbox-status">In progress · unpublished</span>
+                    <h3 id="gearbox-title">Planetary Gearbox</h3>
+                    <p class="project-tools">SOLIDWORKS · CAD design</p>
+                    <p id="gearbox-description">Project files have not been uploaded. The SOLIDWORKS repository is currently empty.</p>
+                    <span class="card-link" id="gearbox-link">View SOLIDWORKS repository <span aria-hidden="true">↗</span></span>
+                </a>
+                <a class="card" href="https://github.com/HamzaAmam/python-projects" aria-labelledby="python-title python-link" aria-describedby="python-status python-description">
+                    <span class="project-status" id="python-status">In progress · unpublished</span>
+                    <h3 id="python-title">Python Automation</h3>
+                    <p class="project-tools">Python · Automation</p>
+                    <p id="python-description">Repository setup has begun with a README. Automation code and results have not been published yet.</p>
+                    <span class="card-link" id="python-link">View Python repository <span aria-hidden="true">↗</span></span>
+                </a>
+                <a class="card" href="https://github.com/HamzaAmam/blender-assets" aria-labelledby="blender-title blender-link" aria-describedby="blender-status blender-description">
+                    <span class="project-status" id="blender-status">In progress · unpublished</span>
+                    <h3 id="blender-title">Roblox Assets</h3>
+                    <p class="project-tools">Blender · Roblox Studio</p>
+                    <p id="blender-description">Repository setup has begun with a README. Models, renders, and Roblox assets have not been published yet.</p>
+                    <span class="card-link" id="blender-link">View Blender repository <span aria-hidden="true">↗</span></span>
+                </a>
+            </div>
+        </section>
 
-        <h2>
-            I build software,
-            CAD designs,
-            and interactive experiences.
-        </h2>
+        <section id="skills" class="section container" aria-labelledby="skills-heading">
+            <p class="eyebrow">Tools I use</p>
+            <h2 id="skills-heading">Skills</h2>
+            <ul class="skills-list">
+                <li>SOLIDWORKS</li>
+                <li>Python</li>
+                <li>Blender</li>
+                <li>Git</li>
+                <li>Roblox Studio</li>
+            </ul>
+        </section>
 
-        <p class="hero-description">
+        <section id="contact" class="section container" aria-labelledby="contact-heading">
+            <p class="eyebrow">Get in touch</p>
+            <h2 id="contact-heading">Contact</h2>
+            <p class="section-description">Interested in engineering, design, or a collaboration? Send me an email.</p>
+            <a class="contact-link" href="mailto:hamzaamam0102@gmail.com">hamzaamam0102@gmail.com</a>
+        </section>
+    </main>
 
-            Passionate about Python, SolidWorks,
-            Blender, Robotics and building projects
-            that solve real-world problems.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="button">
-                View Projects
-            </a>
-
-            <a href="#contact" class="button secondary">
-                Contact Me
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I'm a Mechanical Engineering student at the University of South Carolina.
-            I'm passionate about engineering design, Python programming,
-            CAD modeling, Blender, and building things that solve real problems.
-        </p>
-
-    </section>
-
-    <section id="projects">
-
-        <h2>Projects</h2>
-
-        <div class="card">
-            <h3>Planetary Gearbox</h3>
-            <p>SOLIDWORKS Project</p>
-        </div>
-
-        <div class="card">
-            <h3>Python Automation</h3>
-            <p>CS50 Project</p>
-        </div>
-
-        <div class="card">
-            <h3>Roblox Assets</h3>
-            <p>Blender + Roblox Studio</p>
-        </div>
-
-    </section>
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <ul>
-            <li>SolidWorks</li>
-            <li>Python</li>
-            <li>Blender</li>
-            <li>Git</li>
-            <li>Roblox Studio</li>
-        </ul>
-
-    </section>
-
-    <section id="contact">
-
-        <h2>Contact</h2>
-
-        <p>Email: hamzaamam0102@gmail.com</p>
-
-    </section>
-
-<script src="assets/js/script.js"></script>
-
+    <footer class="container">
+        <p>Hamza Amam · Mechanical Engineering</p>
+    </footer>
 </body>
 </html>
